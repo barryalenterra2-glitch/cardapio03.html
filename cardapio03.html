@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi do Lago - Cardápio</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .primary-red { color: #c62828; }
+    .bg-primary-red { background-color: #c62828; }
+    .secondary-green { color: #2e7d32; }
+    .bg-secondary-green { background-color: #2e7d32; }
+    .accent-blue { color: #1565c0; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero -->
+  <header class="bg-primary-red text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold">Sushi do Lago</h1>
+      <p class="mt-2 text-lg">O melhor da culinária japonesa em Boa Esperança</p>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="bg-secondary-green text-white">
+    <div class="container mx-auto px-4 flex justify-center space-x-6 py-3 font-semibold">
+      <a href="#entradas" class="hover:underline">Entradas</a>
+      <a href="#sushis" class="hover:underline">Sushis</a>
+      <a href="#bebidas" class="hover:underline">Bebidas</a>
+      <a href="#sobremesas" class="hover:underline">Sobremesas</a>
+    </div>
+  </nav>
+
+  <!-- Entradas -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 id="entradas" class="text-3xl font-bold text-center secondary-green mb-8">Entradas</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1593867396483-6a51203d70c2" alt="Sunomono" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Sunomono</h3>
+          <p class="text-sm mb-3">Salada japonesa de pepino com molho agridoce.</p>
+          <span class="text-lg font-bold accent-blue">R$ 15,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1592928307483-24bb1eecae28" alt="Guioza" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Guioza</h3>
+          <p class="text-sm mb-3">Pastéis japoneses recheados de carne e legumes.</p>
+          <span class="text-lg font-bold accent-blue">R$ 22,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Tempurá" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Tempurá</h3>
+          <p class="text-sm mb-3">Legumes e camarão empanados ao estilo japonês.</p>
+          <span class="text-lg font-bold accent-blue">R$ 30,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sushis -->
+  <section class="container mx-auto px-4 py-12 bg-gray-50">
+    <h2 id="sushis" class="text-3xl font-bold text-center secondary-green mb-8">Sushis</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1604454525842-c8afc8b9f3cd" alt="Niguiri de Salmão" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Niguiri de Salmão</h3>
+          <p class="text-sm mb-3">Arroz temperado coberto com fatia de salmão fresco.</p>
+          <span class="text-lg font-bold accent-blue">R$ 8,00 (unid.)</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1606788075761-8f01cb9988b3" alt="Combo Sushi" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Combo Sushi 20 peças</h3>
+          <p class="text-sm mb-3">Seleção especial de sushis e sashimis variados.</p>
+          <span class="text-lg font-bold accent-blue">R$ 75,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1617196039897-3e5dc408dc32" alt="Uramaki" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Uramaki Especial</h3>
+          <p class="text-sm mb-3">Arroz por fora, recheio de salmão, cream cheese e cebolinha.</p>
+          <span class="text-lg font-bold accent-blue">R$ 12,00 (unid.)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bebidas -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 id="bebidas" class="text-3xl font-bold text-center secondary-green mb-8">Bebidas</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1572039083459-50b6b60dc846" alt="Chá Verde" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Chá Verde</h3>
+          <p class="text-sm mb-3">Servido quente ou gelado.</p>
+          <span class="text-lg font-bold accent-blue">R$ 8,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1603399326464-9fc83b2e4e77" alt="Saque Importado" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Saque Importado</h3>
+          <p class="text-sm mb-3">Bebida alcoólica tradicional japonesa.</p>
+          <span class="text-lg font-bold accent-blue">R$ 25,00 (dose)</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1510626176961-4b77d8f8b19f" alt="Refrigerante" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Refrigerante</h3>
+          <p class="text-sm mb-3">Diversos sabores.</p>
+          <span class="text-lg font-bold accent-blue">R$ 6,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobremesas -->
+  <section class="container mx-auto px-4 py-12 bg-gray-50">
+    <h2 id="sobremesas" class="text-3xl font-bold text-center secondary-green mb-8">Sobremesas</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Mochi" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Mochi</h3>
+          <p class="text-sm mb-3">Bolinho de arroz recheado com doce de feijão.</p>
+          <span class="text-lg font-bold accent-blue">R$ 12,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" alt="Sorvete de Chá Verde" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Sorvete de Chá Verde</h3>
+          <p class="text-sm mb-3">Cremoso e refrescante, com sabor marcante.</p>
+          <span class="text-lg font-bold accent-blue">R$ 14,00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1587574293340-611c4efc536e" alt="Cheesecake Japonês" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold primary-red mb-2">Cheesecake Japonês</h3>
+          <p class="text-sm mb-3">Leve, fofinho e delicioso.</p>
+          <span class="text-lg font-bold accent-blue">R$ 18,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary-green text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2025 Sushi do Lago – Todos os direitos reservados</p>
+      <a href="#" class="underline text-sm">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
